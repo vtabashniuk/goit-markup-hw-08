@@ -1,0 +1,34 @@
+.clients {
+  display: flex;
+  justify-content: space-between;
+
+  .icons {
+    width: 88px;
+    height: 52px;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    fill: $icons-logo-primary-color;
+    border-radius: 4px;
+    transition-property: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: $accent-color;
+      fill: $accent-color;
+    }
+  }
+  
+  &-title {
+    @extend %title;
+  }
+}

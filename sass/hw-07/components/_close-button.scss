@@ -1,0 +1,24 @@
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: $white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: $time-function;
+
+  &:hover,
+  &:focus,
+  &:active {
+    fill: $accent-color;
+  }
+  .icons {
+    width: 11px;
+    height: 11px;
+  }
+}

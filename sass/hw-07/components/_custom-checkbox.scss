@@ -1,0 +1,10 @@
+%custom-checkbox {
+  align-self: center;
+  order: -1;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-color: transparent;
+  background-image: url("../img/studio/svg/icon-uncheked.svg");
+  transition: background-color 250ms var(--time-function);
+}

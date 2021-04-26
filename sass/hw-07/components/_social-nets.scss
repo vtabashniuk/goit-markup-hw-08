@@ -1,0 +1,33 @@
+.social-nets {
+  display: flex;
+  justify-content: center;
+
+  .items:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .icons {
+    width: 20px;
+    height: 20px;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: $white;
+    fill: $icons-logo-primary-color;
+    border-radius: 50%;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      fill: $white;
+    }
+  }
+}
