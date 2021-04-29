@@ -13,16 +13,15 @@
 }
 
 .header-container {
+  position: relative;
   max-width: 480px;
   margin: 0 auto;
   padding: 10px 15px;
   background-color: transparent;
-  outline: green 1px solid;
 }
 
 .nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  outline: blue 1px solid;
 }
