@@ -14,10 +14,18 @@
 
 .header-container {
   position: relative;
-  max-width: 480px;
   margin: 0 auto;
-  padding: 10px 15px;
   background-color: transparent;
+
+  @media screen and (min-width: 320px) {
+    max-width: 480px;
+    padding: 10px 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 21px 15px;
+  }
 }
 
 .nav-container {
