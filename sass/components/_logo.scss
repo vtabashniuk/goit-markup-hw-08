@@ -1,13 +1,16 @@
 .logo {
   display: block;
-  font-family: Raleway;
-  font-weight: 700;
+  font-family: Raleway, sans-serif;
   font-size: 24px;
   line-height: 1.167;
-  letter-spacing: 0.03em;
+  font-weight: 700;
   color: $accent-color;
-
+  @media screen and (min-width: 1200px) {
+    padding: 24px 0 25px 0;
+    font-size: 26px;
+    line-height: 1.192;
+  }
   &__second-part {
-   color: $secondary-text-color;   
+    color: $secondary-text-color;
   }
 }
