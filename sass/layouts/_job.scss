@@ -1,0 +1,7 @@
+.job-title {
+  @extend %title;
+}
+
+.job-list {
+  display: flex;
+}

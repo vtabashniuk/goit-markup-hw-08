@@ -301,7 +301,7 @@ ul {
   }
 }
 
-.hero-container__title, .advantages-list__title {
+.hero-container__title, .advantages-list__title, .job-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -334,6 +334,16 @@ ul {
 @media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0;
+  }
+}
+
+.section.job {
+  padding: 0 0 94px 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .section.job {
+    display: none;
   }
 }
 
@@ -640,5 +650,11 @@ ul {
 
 .astronaut::before {
   background-image: url("../../img/studio/our-advantages/astronaut.svg");
+}
+
+.job-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */
