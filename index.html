@@ -87,8 +87,14 @@
       <!-- HERO -->
       <section class="hero-section">
         <div class="hero-container">
-          <h1 class="hero-container__title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-container__modal-button" type="button" data-modal-open>
+          <h1 class="hero-container__title">
+            Эффективные решения для вашего бизнеса
+          </h1>
+          <button
+            class="hero-container__modal-button"
+            type="button"
+            data-modal-open
+          >
             Заказать услугу
           </button>
         </div>
@@ -135,31 +141,67 @@
           <h2 class="job-title">Чем мы занимаемся</h2>
           <ul class="job-list">
             <li class="job-list__items">
-              <img
-                src="./img/studio/our-job/our-job-1.jpg"
-                alt="Пишем код на компьютере"
-                width="370"
-                height="294"
-              />
-              <p class="job-label">Десктопные приложения</p>
+              <picture>
+                <source
+                  srcset="
+                    ./img/studio/our-job/our-job-1@1x.webp 1x,
+                    ./img/studio/our-job/our-job-1@2x.webp 2x,
+                    ./img/studio/our-job/our-job-1@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./img/studio/our-job/our-job-1@2x.jpg 2x,
+                    ./img/studio/our-job/our-job-1@3x.jpg 3x
+                  "
+                  src="./img/studio/our-job/our-job-1@1x.jpg"
+                  alt="Пишем код на компьютере"
+                />
+              </picture>
+              <p class="job-list__label">Десктопные приложения</p>
             </li>
-            <li class="items">
-              <img
-                src="./img/studio/our-job/our-job-2.jpg"
-                alt="Работаем с дизайном мобильного приложения"
-                width="370"
-                height="294"
-              />
-              <p class="job-label">Мобильные приложения</p>
+            <li class="job-list__items">
+              <picture>
+                <source
+                  srcset="
+                    ./img/studio/our-job/our-job-2@1x.webp 1x,
+                    ./img/studio/our-job/our-job-2@2x.webp 2x,
+                    ./img/studio/our-job/our-job-2@3x.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./img/studio/our-job/our-job-2@2x.jpg 2x,
+                    ./img/studio/our-job/our-job-2@3x.jpg 3x
+                  "
+                  src="./img/studio/our-job/our-job-2@1x.jpg"
+                  alt="Работаем с дизайном мобильного приложения"
+                />
+              </picture>
+              <p class="job-list__label">Мобильные приложения</p>
             </li>
-            <li class="items">
-              <img
-                src="./img/studio//our-job/our-job-3.jpg"
-                alt="Выбираем цвет с палитры"
-                width="370"
-                height="294"
-              />
-              <p class="job-label">Дизайнерские решения</p>
+            <li class="job-list__items">
+              <picture>
+                <source
+                  srcset="
+                    ./img/studio/our-job/our-job-3@1x.webp 1x,
+                    ./img/studio/our-job/our-job-3@2x.webp  2x,
+                    ./img/studio/our-job/our-job-3@3x.webp  3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./img/studio/our-job/our-job-3@2x.jpg 2x,
+                    ./img/studio/our-job/our-job-3@3x.jpg 3x
+                  "
+                  src="./img/studio/our-job/our-job-3@1x.jpg"
+                  alt="Выбираем цвет с палитры"
+                />
+              </picture>
+              <p class="job-list__label">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
