@@ -305,7 +305,7 @@ ul {
   }
 }
 
-.hero-container__title, .advantages-list__title, .job-title {
+.hero-container__title, .advantages-list__title, .job-title, .team-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -349,6 +349,10 @@ ul {
   .section.job {
     display: none;
   }
+}
+
+.section.team {
+  background-color: #f5f4fa;
 }
 
 .container {
@@ -682,5 +686,13 @@ ul {
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+@media screen and (max-width: 1200px) {
+  .team-title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.179;
+  }
 }
 /*# sourceMappingURL=main.css.map */
