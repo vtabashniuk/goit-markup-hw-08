@@ -695,4 +695,49 @@ ul {
     line-height: 1.179;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.team-list__members {
+  outline: red 1px solid;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-list__members {
+    margin: 15px;
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-list__members:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list__members:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team-list__photo {
+  max-width: 100%;
+  height: auto;
+}
 /*# sourceMappingURL=main.css.map */

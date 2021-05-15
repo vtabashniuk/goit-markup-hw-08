@@ -7,3 +7,35 @@
     line-height: 1.179;
   }
 }
+
+.team-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: -15px;
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__members {
+    outline: red 1px solid;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin: 15px;
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    }
+  }
+
+  &__members:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+    }
+  }
+
+  &__photo {
+      max-width: 100%;
+      height: auto;
+  }
+}
