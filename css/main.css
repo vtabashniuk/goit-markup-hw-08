@@ -688,7 +688,7 @@ ul {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .team-title {
     margin-bottom: 30px;
     font-size: 28px;
