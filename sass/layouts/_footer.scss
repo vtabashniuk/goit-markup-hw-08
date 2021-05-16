@@ -18,12 +18,12 @@
   .social-container,
   .address-container {
     margin-bottom: 60px;
+    text-align: center;
 
     &__text {
       margin-bottom: 20px;
       font-weight: 700;
       line-height: 1.143;
-      text-align: center;
       text-transform: uppercase;
       color: $white;
     }
@@ -39,7 +39,7 @@
   }
 
   .logo {
-    text-align: center;
+    display: inline-block;
     margin-bottom: 20px;
 
     &__second-part {
@@ -50,12 +50,7 @@
   &__address {
     margin-bottom: 8px;
     font-style: normal;
-    text-align: center;
     color: $white;
-  }
-
-  &-contacts__items {
-    text-align: center;
   }
 
   &-contacts__items:not(:last-child) {

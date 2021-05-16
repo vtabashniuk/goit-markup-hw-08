@@ -977,6 +977,7 @@ ul {
 .footer .social-container,
 .footer .address-container {
   margin-bottom: 60px;
+  text-align: center;
 }
 
 .footer .social-container__text, .footer .form-container__text,
@@ -984,7 +985,6 @@ ul {
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.143;
-  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -999,7 +999,7 @@ ul {
 }
 
 .footer .logo {
-  text-align: center;
+  display: inline-block;
   margin-bottom: 20px;
 }
 
@@ -1010,12 +1010,7 @@ ul {
 .footer__address {
   margin-bottom: 8px;
   font-style: normal;
-  text-align: center;
   color: #ffffff;
-}
-
-.footer-contacts__items {
-  text-align: center;
 }
 
 .footer-contacts__items:not(:last-child) {
