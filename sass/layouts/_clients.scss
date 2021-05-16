@@ -1,0 +1,47 @@
+.clients {
+  &-title {
+    @extend %title;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 1.179;
+    }
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  &__items {
+    margin: 15px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 3 * 30px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 6 * 30px) / 6);
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    fill: #afb1b8;
+    transition: border-color 250ms $time-function, fill 250ms $time-function;
+
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+      fill: $accent-color;
+    }
+  }
+
+  &__icons {
+    width: 88px;
+    height: 52px;
+  }
+}
