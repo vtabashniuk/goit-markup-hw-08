@@ -315,7 +315,7 @@ ul {
   color: #212121;
 }
 
-.hero-container__modal-button {
+.subscribe-form .submit-button, .hero-container__modal-button {
   display: block;
   height: 50px;
   background-color: #2196f3;
@@ -418,6 +418,79 @@ ul {
 .social-nets__icons {
   width: 20px;
   height: 20px;
+}
+
+.subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.subscribe-form .input {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 50px;
+  padding: 16px 15px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.subscribe-form .input:active, .subscribe-form .input:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.subscribe-form .input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-form .input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-form .input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-form .input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-form .submit-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 28px;
+  margin: 20px auto 0 auto;
+  min-width: 200px;
+}
+
+.subscribe-form .submit-button .icons {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
 }
 
 .visually-hidden {
@@ -901,18 +974,28 @@ ul {
   }
 }
 
-.footer .address-container,
-.footer .social-container {
+.footer .social-container,
+.footer .address-container {
   margin-bottom: 60px;
 }
 
-.footer .social-container__text {
+.footer .social-container__text, .footer .form-container__text,
+.footer .address-container__text {
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.143;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.footer .social-nets__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+
+.footer .social-nets__link:hover, .footer .social-nets__link:focus {
+  background-color: #2196f3;
 }
 
 .footer .logo {
