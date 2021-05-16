@@ -11,6 +11,9 @@
       max-width: 768px;
     }
     @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
       max-width: 1200px;
     }
   }
@@ -23,10 +26,18 @@
     }
   }
 
+  .address-container {
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
+  }
+
   .social-container,
   .address-container {
-    margin-bottom: 60px;
-    text-align: center;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+      text-align: center;
+    }
 
     &__text {
       margin-bottom: 20px;
@@ -49,7 +60,7 @@
   .logo {
     display: inline-block;
     margin-bottom: 20px;
-
+    padding: 0;
     &__second-part {
       color: $white;
     }
@@ -70,12 +81,26 @@
   }
 
   .form-container {
-    margin: 0 auto;
-    max-width: 450px;
-    text-align: center;
+    @media screen and (max-width: 1199px) {
+      margin: 0 auto;
+      max-width: 450px;
+      text-align: center;
+    }
+    flex-grow: 1;
+    max-width: 570px;
 
     &__text {
       @extend .social-container__text;
+    }
+  }
+  .subscribe-form {
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      .submit-button {
+        margin: 0 0 0 12px;
+      }
     }
   }
 }
