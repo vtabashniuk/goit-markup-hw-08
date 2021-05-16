@@ -15,6 +15,14 @@
     }
   }
 
+  .tablet-wrapper {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-around;
+    }
+  }
+
   .social-container,
   .address-container {
     margin-bottom: 60px;
@@ -61,7 +69,13 @@
     color: $contacts-color;
   }
 
-  .form-container__text {
-    @extend .social-container__text;
+  .form-container {
+    margin: 0 auto;
+    max-width: 450px;
+    text-align: center;
+
+    &__text {
+      @extend .social-container__text;
+    }
   }
 }
