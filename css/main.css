@@ -305,7 +305,7 @@ ul {
   }
 }
 
-.hero-container__title, .advantages-list__title, .job-title, .team-title {
+.hero-container__title, .advantages-list__title, .job-title, .team-title, .team-list-content__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -376,6 +376,48 @@ ul {
   .container {
     width: 1200px;
   }
+}
+
+.social-nets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-nets__items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-nets__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  fill: #afb1b8;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-nets__link:hover, .social-nets__link:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+
+.social-nets__icons {
+  width: 20px;
+  height: 20px;
 }
 
 .visually-hidden {
@@ -713,7 +755,10 @@ ul {
 }
 
 .team-list__members {
-  outline: red 1px solid;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -739,5 +784,28 @@ ul {
 .team-list__photo {
   max-width: 100%;
   height: auto;
+}
+
+.team-list-content {
+  padding: 30px 0 24px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list-content {
+    padding: 30px 0;
+  }
+}
+
+.team-list-content__title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.188;
+}
+
+.team-list-content__description {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
