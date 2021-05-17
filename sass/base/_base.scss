@@ -16,6 +16,10 @@ body {
   letter-spacing: 0.03em;
   background-color: $white;
   color: $main-text-color;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 a {

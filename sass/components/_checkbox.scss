@@ -1,0 +1,34 @@
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  padding: 0 11px 0 12px;
+  margin-bottom: 30px;
+  @media screen and (max-width: 1199px) {
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.167;
+  }
+}
+
+.checkbox-text-label {
+  color: $accent-color;
+  text-decoration-line: underline;
+}
+
+.custom-checkbox {
+  order: -1;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-color: transparent;
+  background-image: url("../img/studio/svg/icon-uncheked.svg");
+  transition: background-color 250ms $time-function,
+    background-image 250ms $time-function;
+}
+
+.checkbox:checked + .custom-checkbox {
+  background-color: $accent-color;
+  background-image: url("../img/studio/svg/icon-checked.svg");
+  background-origin: border-box;
+  border: transparent;
+}

@@ -1,19 +1,23 @@
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
+    position: relative;
+    margin: 0 auto;
     max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 450px;
+    transform: translate(-50%, -50%);
   }
   @media screen and (min-width: 1200px) {
     width: 528px;
   }
-  // width: 528px;
-  // height: 580px;
   padding: 40px;
   background-color: $white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -22,6 +26,16 @@
   transition: transform 500ms $time-function 250ms,
     opacity 500ms $time-function 250ms, visibility 500ms $time-function 250ms,
     pointer-events 500ms $time-function 250ms;
+
+  &__title {
+    @extend %title;
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 1.5;
+    @media screen and (min-width: 1200px) {
+      line-height: 1.15;
+    }
+  }
 }
 
 .modal-close-button {
