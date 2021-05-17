@@ -27,7 +27,8 @@
         "../sass/layouts/_clients.scss",
         "../sass/layouts/_footer.scss",
         "../sass/layouts/_backdrop.scss",
-        "../sass/layouts/_modal.scss"
+        "../sass/layouts/_modal.scss",
+        "../sass/pages/_portfolio.scss"
     ],
     "names": [],
     "file": "main.min.css"
